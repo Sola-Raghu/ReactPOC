@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
-import pincodeData from '../../data/pincodes.json'; // Import the JSON data
+import pincodeData from '../../data/Pincodes.json'; // Import the JSON data
 import styles from './RegistrationForm.module.css'; // Import the CSS module
 
 interface RegistrationFormValues {
