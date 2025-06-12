@@ -1,0 +1,111 @@
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: var(--secondary-bg);
+}
+
+.loginForm {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  border: 1px solid var(--border-color-light);
+  border-radius: 8px;
+  background-color: var(--primary-bg);
+  box-shadow: 0 4px 20px var(--shadow-lg);
+}
+
+.loginForm h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary-text);
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+
+.formGroup {
+  margin-bottom: 25px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.formGroup input:focus {
+  border-color: var(--input-focus-border);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem var(--input-focus-shadow);
+}
+
+.inputError {
+  border-color: var(--color-danger);
+}
+
+.inputError:focus {
+  box-shadow: 0 0 0 0.2rem var(--input-focus-shadow);
+}
+
+
+.errorMessage {
+  color: var(--color-danger);
+  font-size: 0.875em;
+  margin-top: 6px;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 4px var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.submitButton:hover:not(:disabled) {
+  background-color: var(--color-primary-darker);
+  box-shadow: 0 4px 8px var(--shadow-md);
+}
+
+.submitButton:disabled {
+  background-color: var(--secondary-text);
+  opacity: 0.65;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.submitButton svg {
+  flex-shrink: 0;
+}
+
+.hint {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: var(--secondary-text);
+  text-align: center;
+}

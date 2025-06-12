@@ -1,0 +1,137 @@
+.newMeetingPage {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.newMeetingPage h2 {
+  margin-bottom: 20px;
+  color: var(--primary-text);
+}
+
+.createButton {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.createButton:hover {
+  background-color: var(--color-primary-darker);
+}
+
+.meetingList h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: var(--secondary-text);
+}
+
+.noMeetings {
+  color: var(--tertiary-text);
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.meetingForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 0.95em;
+  color: var(--secondary-text);
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1em;
+  transition: border-color 0.2s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 0.2rem rgba(var(--color-primary-rgb), 0.25);
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.errorMessage {
+  color: var(--color-danger);
+  font-size: 0.875em;
+  margin-top: 5px;
+}
+
+input[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+  border-color: var(--color-danger);
+}
+
+input[aria-invalid="true"]:focus,
+textarea[aria-invalid="true"]:focus {
+  outline: none;
+  border-color: var(--color-danger);
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cancelButton {
+  padding: 10px 15px;
+  background-color: var(--secondary-bg);
+  color: var(--secondary-text);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.cancelButton:hover {
+  background-color: var(--secondary-bg-darker);
+  color: var(--primary-text);
+}
+
+.saveButton {
+  padding: 10px 15px;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.saveButton:hover {
+  background-color: var(--color-primary-darker);
+}
+
+.saveButton:disabled {
+  background-color: var(--secondary-text);
+  opacity: 0.65;
+  cursor: not-allowed;
+}
